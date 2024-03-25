@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity#3</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Roboto&family=Shadows+into+Light&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+</head>
+<body>
+<header class="mainheader">
+  <div class="header-container">
+  <h1><i class="fas fa-table"></i>Formatting a Table</h1>
+    </div>
+  </header>
+<div class="container">
+  <section id="one">
+    <aside>
+      <h2><i class="fas fa-question-circle"></i>HTML Structure</h2>
+      <h3>Tags</h3>
+      <ul>
+        <li><strong>table</strong>:table</li>
+        <li><strong>table</strong>:table title</li>
+        <li><strong>thead</strong>:Table header</li>
+        <li><strong>tbody</strong>:Table content</li>
+        <li><strong>tr</strong>:Row of a table</li>
+        <li><strong>th</strong>:Title cell of a table</li>
+        <li><strong>td</strong>:Cell of a table</li>    
+      </ul>
+      <h3>Attributes</h3>
+      <ul>
+        <li><strong>colspan</strong>:defines the number of columns to be merged</li>
+        <li><strong>rowspan</strong>:defines the number of rows to be merged</li>
+        <li><strong>scope</strong>:defines the td cells to which the th cells is linked(row/col)</li>
+        
+      </ul>
+    </aside>
+    <article>
+      <h2>Unstyled HTML Table</h2>
+      <p>Let&apos;s start by creating a table that will list a data set, for example.<br>No CSS style is applied:</p>
+      <br><br><br>
+      
+      <table>
+        <caption>Presentation of the various PHP Frameworks</caption>
+        <thead>
+          <tr>
+            <th><strong>Framework</strong></th>
+            <th><strong>Year of creation</strong></th>
+            <th><strong>Creator</strong></th>
+            <th><strong>Github Stars</strong></th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Symfony</strong></td>
+            <td>2005</td>
+        <td>Sensio Labs</td>
+        <td>23.1k</td> 
+          </tr>
+        <tr>
+            <td><strong>Laravel</strong></td>
+            <td>2011</td>
+        <td>Taylor Otwell</td>
+        <td>58.8k</td>
+          </tr>
+        <tr>
+            <td><strong>CodeIgniter</strong></td>
+            <td>2006</td>
+        <td>Rick Ellis</td>
+        <td>18k</td>       
+          </tr>
+        <tr>
+            <td><strong>Zend Framework</strong></td>
+            <td>2006</td>
+        <td>Zend Technologies</td>
+        <td>5.7k</td>
+          </tr>
+        <tr>
+            <td><strong>Yii</strong></td>
+            <td>2008</td>
+        <td>Qiang Xu</td>
+        <td>4.8k</td>
+          </tr>
+        <tr>
+            <td><strong>CakePHP</strong></td>
+            <td>2005</td>
+        <td>Cake Software Foundation</td>
+        <td>8.1k</td>    
+          </tr>
+        <tr>
+            <td><strong>FuelPHP</strong></td>
+            <td>2011</td>
+        <td>Fuel PHP dev team</td>
+        <td>&gt1k</td>    
+          </tr>
+        <tr>
+            <td><strong>Phalcon</strong></td>
+            <td>2012</td>
+        <td>Andres Gutierrez</td>
+        <td>10.6k</td>        
+          </tr>
+        <tr>
+            <td><strong>Slim PHP</strong></td>
+            <td>-</td>
+        <td>Slim Framework Team</td>
+        <td>10.6k</td>       
+          </tr>
+        <tr>
+            <td><strong>PEAR</strong></td>
+            <td>1999</td>
+        <td>Stig S. Bakken</td>
+        <td>-</td>
+        
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <tr>
+            <td><strong>Total stars</strong></td>
+            <td></td>
+        <td></td>
+        <td>&gt100k</td>
+        
+          </tr>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+    <br><br><br><br><br>
+  </section>
+   <section id="two">
+    <aside>
+      <h2><i class="fas fa-question-circle"></i>CSS Styles</h2>
+      <ul>
+        <li><strong>table-layout</strong></li>
+        <li><strong>border-collapse</strong></li>
+        <li><strong>caption-side</strong></li>
+        <li><strong>border</strong></li>
+        <li><strong>background-color</strong></li>
+        <li><strong>background-image</strong></li>
+        <li><strong>width</strong></li> 
+         <li><strong>color</strong></li>
+        <li><strong>text-align</strong></li> 
+         <li><strong>font-size</strong></li>
+        <li><strong>...</strong></li> 
+      </ul>
+          </aside>
+    <article>
+      <h2>Stylized HTML Table</h2>
+      <p>The same HTML table with a CSS style this time to define column widths,background colors,font,etc.:</p>
+      <table class="withStyle">
+        <caption>Presentation of the various PHP Frameworks</caption>
+    
+        <thead>
+          <tr>
+            <th><strong>Framework</strong></th>
+            <th><strong>Year of creation</strong></th>
+            <th><strong>Creator</strong></th>
+            <th><strong>Github Stars</strong></th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Symfony</strong></td>
+            <td>2005</td>
+        <td>Sensio Labs</td>
+        <td>23.1k</td> 
+          </tr>
+        <tr>
+            <td><strong>Laravel</strong></td>
+            <td>2011</td>
+        <td>Taylor Otwell</td>
+        <td>58.8k</td>
+          </tr>
+        <tr>
+            <td><strong>CodeIgniter</strong></td>
+            <td>2006</td>
+        <td>Rick Ellis</td>
+        <td>18k</td>       
+          </tr>
+        <tr>
+            <td><strong>Zend Framework</strong></td>
+            <td>2006</td>
+        <td>Zend Technologies</td>
+        <td>5.7k</td>
+          </tr>
+        <tr>
+            <td><strong>Yii</strong></td>
+            <td>2008</td>
+        <td>Qiang Xu</td>
+        <td>4.8k</td>
+          </tr>
+        <tr>
+            <td><strong>CakePHP</strong></td>
+            <td>2005</td>
+        <td>Cake Software Foundation</td>
+        <td>8.1k</td>    
+          </tr>
+        <tr>
+            <td><strong>FuelPHP</strong></td>
+            <td>2011</td>
+        <td>Fuel PHP dev team</td>
+        <td>&gt1k</td>    
+          </tr>
+        <tr>
+            <td><strong>Phalcon</strong></td>
+            <td>2012</td>
+        <td>Andres Gutierrez</td>
+        <td>10.6k</td>        
+          </tr>
+        <tr>
+            <td><strong>Slim PHP</strong></td>
+            <td>-</td>
+        <td>Slim Framework Team</td>
+        <td>10.6k</td>       
+          </tr>
+        <tr>
+            <td><strong>PEAR</strong></td>
+            <td>1999</td>
+        <td>Stig S. Bakken</td>
+        <td>-</td>
+        
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <tr>
+            <td><strong>Total stars</strong></td>
+            <td></td>
+        <td></td>
+        <td>&gt100k</td>
+        
+          </tr>
+          </tr>
+        </tfoot>
+        
+      </table>
+      </article>
+  </section>
+   <section id="three">
+    <aside>
+      <h2><i class="fas fa-question-circle"></i>Features</h2>
+      <ul>
+        <li><strong>search engine</strong></li>
+        <li><strong>pagination</strong></li>
+        <li><strong>sort by column</strong></li>
+        <li><strong>filter by column</strong></li>
+        <li><strong>order by column</strong></li>
+        <li><strong>...</strong></li>
+        
+              </ul>
+    </aside>
+    <article>
+      <h2>HTML Table/Advanced CSS</h2>
+      <p>Here is an HTML/CSS table widely used in Web applications to present a collection of data:<strong>Datatable</strong> The possible actions are to be encoded in JavaScript (not implemented in this example) and make it possible to <strong>filter, order, search</strong> in a large data collection.</p>
+      <div class="datatable-container">
+      <div id="datatable-header">
+      <label for="lines">Lines displayed:
+      <select id="lines" name="lines">
+  <option value="10">10</option>
+  <option value="9">09</option>
+  <option value="8">08</option>
+</select>
+        </label>
+      <input type="text" class="search"placeholder="Search">
+        </div>
+      <table >
+        <caption>Presentation of the various PHP Frameworks</caption>
+        <thead>
+          <tr>
+            <th class="no_sort"><strong>Framework</strong></th>
+            <th class="sort_asc"><strong>Year of creation</strong>
+              
+            <th class="sort_asc"><strong>Creator</strong></th>
+            <th class="sort_asc"><strong>Github Stars</strong>
+              
+            </th>
+            
+          </tr>
+          <tr>
+            <th><input type="text" placeholder="Framework name"></th>
+            <th><select id="year" name="year">
+  <option value="2022">2020</option>
+  <option value="2023">2021</option>
+  <option value="2024">2022</option>
+</select>
+       </th>
+            <th><input type="text" placeholder="Framework creator"></th>
+            <th><select id="gstar" name="gstar">
+  <option value="<10k">&lt10k</option>
+  <option value=">10k">&gt10k</option>
+</select></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Symfony</strong></td>
+            <td>2005</td>
+        <td>Sensio Labs</td>
+        <td>23.1k</td> 
+          </tr>
+        <tr>
+            <td><strong>Laravel</strong></td>
+            <td>2011</td>
+        <td>Taylor Otwell</td>
+        <td>58.8k</td>
+          </tr>
+        <tr>
+            <td><strong>CodeIgniter</strong></td>
+            <td>2006</td>
+        <td>Rick Ellis</td>
+        <td>18k</td>       
+          </tr>
+        <tr>
+            <td><strong>Zend Framework</strong></td>
+            <td>2006</td>
+        <td>Zend Technologies</td>
+        <td>5.7k</td>
+          </tr>
+        <tr>
+            <td><strong>Yii</strong></td>
+            <td>2008</td>
+        <td>Qiang Xu</td>
+        <td>4.8k</td>
+          </tr>
+        <tr>
+            <td><strong>CakePHP</strong></td>
+            <td>2005</td>
+        <td>Cake Software Foundation</td>
+        <td>8.1k</td>    
+          </tr>
+        <tr>
+            <td><strong>FuelPHP</strong></td>
+            <td>2011</td>
+        <td>Fuel PHP dev team</td>
+        <td>&gt1k</td>    
+          </tr>
+        <tr>
+            <td><strong>Phalcon</strong></td>
+            <td>2012</td>
+        <td>Andres Gutierrez</td>
+        <td>10.6k</td>        
+          </tr>
+        <tr>
+            <td><strong>Slim PHP</strong></td>
+            <td>-</td>
+        <td>Slim Framework Team</td>
+        <td>10.6k</td>       
+          </tr>
+        <tr>
+            <td><strong>PEAR</strong></td>
+            <td>1999</td>
+        <td>Stig S. Bakken</td>
+        <td>-</td>
+        
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3">
+            <p><strong>Total stars:</strong> &gt100k</p>
+          </td>     
+        </tfoot>
+      </table>
+      <div id="datatable-footer">
+        <div id="datatable-footer-results">
+          <p>Total:<strong>150 rows</strong></p>
+        </div>
+        <div class="paginator">
+        <ul class="pagination">
+  <li><a href="#" class="back">Back</a></li>
+  <li><a href="#one">1</a></li>
+  <li><a href="#two">2</a></li>
+  <li><a href="#three">3</a></li>
+  <li><a href="#" class="next">Forward</a></li>
+</ul>
+      </div>
+      </div>
+    </article>
+  </section>
+</div>
+</body>
+</html>
